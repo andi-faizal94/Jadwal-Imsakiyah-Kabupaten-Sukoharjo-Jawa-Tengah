@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import "./App.css";
 
 import { Card, Container, Row, Col, Table } from "react-bootstrap";
 
@@ -26,7 +27,12 @@ function App() {
   }, []);
 
   if (loading)
-    return <h1 className="text-center text-success"> Loading ...</h1>;
+    return (
+      <div className="d-flex flex-column justify-content-center align-items-center main">
+        <div className="box"></div>
+        <h1 className="text-center text-success"> Loading ...</h1>
+      </div>
+    );
   if (error) console.log(error);
 
   return (
