@@ -30,7 +30,7 @@ function App() {
     return (
       <div className="d-flex flex-column justify-content-center align-items-center main">
         <div className="box"></div>
-        <h1 className="text-center text-success"> Loading ...</h1>
+        <h1 className="text-center text-primary"> Loading ...</h1>
       </div>
     );
   if (error) console.log(error);
